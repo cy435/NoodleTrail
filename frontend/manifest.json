@@ -1,0 +1,36 @@
+{
+  "name": "陕面通",
+  "appid": "__UNI__SHAANXI",
+  "description": "陕西面食导览与小游戏",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wx0ac98f81e0ed6ad0",
+    "lazyCodeLoading": "requiredComponents",
+    "setting": {
+      "es6": true,
+      "postcss": true,
+      "minified": true,
+      "urlCheck": false
+    },
+    "usingComponents": true,
+    "permission": {
+      "scope.userLocation": {
+        "desc": "为了给你提供精准的门店级打卡定位服务，请授权定位权限"
+      }
+    },
+    "requiredPrivateInfos": ["getLocation", "chooseLocation"],
+    "plugins": {
+      "routePlan": {
+        "version": "2.2.0",
+        "provider": "wx50b5593e81dd937a"
+      }
+    }
+  },
+
+  "h5": {
+    "title": "陕面通",
+    "template": "index.html"
+  }
+}

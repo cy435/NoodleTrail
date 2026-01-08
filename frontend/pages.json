@@ -1,0 +1,306 @@
+{
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了给你提供精准的门店级打卡定位服务，请授权定位权限"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "pages": [
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationBarBackgroundColor": "#fff5dc",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/index",
+      "name": "index",
+      "independent": true,
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "陕面通",
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default",
+            "usingComponents": {
+              "ec-canvas": "/wxcomponents/ec-canvas/ec-canvas"
+            }
+          }
+        },
+        {
+          "path": "Map-Flavors",
+          "style": {
+            "navigationBarTitleText": "陕味趣游地图",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "FoodPoiDetail",
+          "style": {
+            "navigationBarTitleText": "店铺详情",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "ScenicPoiDetail",
+          "style": {
+            "navigationBarTitleText": "景点详情",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "HeritagePoiDetail",
+          "style": {
+            "navigationBarTitleText": "非遗体验中心",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/heritage",
+      "name": "heritage",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "非遗详情",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fffef7",
+            "navigationBarTextStyle": "black",
+            "backgroundColor": "#fffef7"
+          }
+        },
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "陕非遗",
+            "navigationBarBackgroundColor": "#fff8eb",
+            "navigationBarTextStyle": "black",
+            "backgroundColor": "#ffffff",
+            "navigationStyle": "default"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/noodle",
+      "name": "noodle",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "面食详情",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "item",
+          "style": {
+            "navigationBarTitleText": "面食",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "must-eat",
+          "style": {
+            "navigationBarTitleText": "必吃榜",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#1a1108",
+            "navigationBarTextStyle": "white",
+            "navigationStyle": "default",
+            "backgroundColor": "#0f0703"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/flavor",
+      "name": "flavor",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "陕味集",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/checklist",
+      "name": "checklist",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "陕游记",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/mine",
+      "name": "mine",
+      "independent": true,
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "个人中心",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "checklists",
+          "style": {
+            "navigationBarTitleText": "我的清单大全",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "heritage-records",
+          "style": {
+            "navigationBarTitleText": "非遗体验记录",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "checkin-records",
+          "style": {
+            "navigationBarTitleText": "美食打卡记录",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "food-footprints",
+          "style": {
+            "navigationBarTitleText": "陕味足迹大全",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "recommend-comments",
+          "style": {
+            "navigationBarTitleText": "推荐与评论记录",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "about",
+          "style": {
+            "navigationBarTitleText": "关于我们",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "feedback",
+          "style": {
+            "navigationBarTitleText": "用户建议",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        },
+        {
+          "path": "settings",
+          "style": {
+            "navigationBarTitleText": "设置中心",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/agreement",
+      "name": "agreement",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "用户登录指引协议",
+            "navigationBarBackgroundColor": "#fff5dc",
+            "navigationBarTextStyle": "black",
+            "navigationStyle": "default"
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/login/index": {
+      "network": "all",
+      "packages": ["pages/index"]
+    },
+    "pages/index/index": {
+      "network": "all",
+      "packages": ["pages/heritage", "pages/noodle", "pages/flavor"]
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff8eb"
+  }
+}
+
+
