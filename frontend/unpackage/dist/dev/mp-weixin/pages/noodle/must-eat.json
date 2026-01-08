@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "必吃榜",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1a1108",
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "default",
+  "backgroundColor": "#0f0703",
+  "usingComponents": {}
+}

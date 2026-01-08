@@ -1,0 +1,110 @@
+{
+  "pages": [
+    "pages/login/index"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/index",
+      "pages": [
+        "index",
+        "Map-Flavors",
+        "FoodPoiDetail",
+        "ScenicPoiDetail",
+        "HeritagePoiDetail"
+      ],
+      "name": "index",
+      "independent": true
+    },
+    {
+      "root": "pages/heritage",
+      "pages": [
+        "detail",
+        "index"
+      ],
+      "name": "heritage"
+    },
+    {
+      "root": "pages/noodle",
+      "pages": [
+        "detail",
+        "item",
+        "must-eat"
+      ],
+      "name": "noodle"
+    },
+    {
+      "root": "pages/flavor",
+      "pages": [
+        "index"
+      ],
+      "name": "flavor"
+    },
+    {
+      "root": "pages/checklist",
+      "pages": [
+        "index"
+      ],
+      "name": "checklist"
+    },
+    {
+      "root": "pages/mine",
+      "pages": [
+        "index",
+        "checklists",
+        "heritage-records",
+        "checkin-records",
+        "food-footprints",
+        "recommend-comments",
+        "about",
+        "feedback",
+        "settings"
+      ],
+      "name": "mine",
+      "independent": true
+    },
+    {
+      "root": "pages/agreement",
+      "pages": [
+        "index"
+      ],
+      "name": "agreement"
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff8eb"
+  },
+  "preloadRule": {
+    "pages/login/index": {
+      "network": "all",
+      "packages": [
+        "pages/index"
+      ]
+    },
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "pages/heritage",
+        "pages/noodle",
+        "pages/flavor"
+      ]
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了给你提供精准的门店级打卡定位服务，请授权定位权限"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "plugins": {
+    "routePlan": {
+      "version": "2.2.0",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "usingComponents": {}
+}

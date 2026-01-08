@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* uni.scss */
+/* 颜色变量 */
+/* 背景色 */
+/* 文字色 */
+/* 边框色 */
+/* 尺寸变量 */
+/* 圆角 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 项目自定义颜色 */
+.page.data-v-2c1eab8a {
+  min-height: 100vh;
+  background: #fff8eb;
+}
+.container.data-v-2c1eab8a {
+  padding: 32rpx;
+}
+.block.data-v-2c1eab8a {
+  margin-bottom: 32rpx;
+  padding: 24rpx 24rpx 20rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, 0.06);
+}
+.title.data-v-2c1eab8a {
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+  color: #5a2c12;
+}
+.text.data-v-2c1eab8a {
+  color: #555555;
+  line-height: 1.8;
+  font-size: 26rpx;
+}
+.btn.data-v-2c1eab8a {
+  margin-top: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #ff9800;
+  color: #ffffff;
+  border-radius: 999rpx;
+  font-size: 26rpx;
+}

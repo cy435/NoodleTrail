@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的清单大全",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#fff5dc",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "default",
+  "usingComponents": {}
+}

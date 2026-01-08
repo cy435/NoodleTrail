@@ -1,0 +1,766 @@
+@charset "UTF-8";
+/* uni.scss */
+/* 颜色变量 */
+/* 背景色 */
+/* 文字色 */
+/* 边框色 */
+/* 尺寸变量 */
+/* 圆角 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 项目自定义颜色 */
+.footprints-page.data-v-2b8df97e {
+  min-height: 100vh;
+  padding: 16rpx 20rpx 24rpx;
+  background: linear-gradient(180deg, #fffaf1 0%, #fff5dc 100%);
+  color: #5a2c12;
+  font-family: "LXGW WenKai Screen", "PingFang SC", system-ui;
+  box-sizing: border-box;
+}
+.top-panel.data-v-2b8df97e {
+  /* 颜色风格跟详情页顶部信息卡统一 */
+  background: #fffef7;
+  border-radius: 24rpx;
+  padding: 16rpx 20rpx 10rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.06);
+  border: 2rpx solid #f0e0c0;
+  margin-bottom: 18rpx;
+}
+.search-row.data-v-2b8df97e {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+/* 搜索结果弹窗样式 */
+.search-result-panel.data-v-2b8df97e {
+  margin-top: 10rpx;
+  margin-bottom: 6rpx;
+  background: #ffffff;
+  border-radius: 18rpx;
+  border: 2rpx solid #f0e0c0;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.06);
+  max-height: 320rpx;
+  overflow: hidden;
+}
+.search-result-scroll.data-v-2b8df97e {
+  max-height: 320rpx;
+}
+.search-result-item.data-v-2b8df97e {
+  padding: 12rpx 16rpx;
+  border-bottom: 1rpx solid #f5e0c2;
+}
+.search-result-item.data-v-2b8df97e:last-child {
+  border-bottom-width: 0;
+}
+.search-result-name.data-v-2b8df97e {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #5a2c12;
+}
+.search-result-meta.data-v-2b8df97e {
+  margin-top: 4rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 2rpx;
+  font-size: 22rpx;
+  color: #8c5c2a;
+}
+.search-result-type.data-v-2b8df97e {
+  color: #c47a2a;
+}
+.search-result-address.data-v-2b8df97e {
+  color: #8c5c2a;
+}
+.search-bar.data-v-2b8df97e {
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 999rpx;
+  padding: 8rpx 18rpx;
+  display: flex;
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.06);
+}
+.search-input.data-v-2b8df97e {
+  flex: 1;
+  font-size: 24rpx;
+  color: #5a2c12;
+}
+.search-clear.data-v-2b8df97e {
+  font-size: 28rpx;
+  padding-left: 8rpx;
+}
+.search-btn-icon.data-v-2b8df97e {
+  width: 56rpx;
+  height: 56rpx;
+  margin-left: 8rpx;
+}
+.category-tabs.data-v-2b8df97e {
+  margin-top: 12rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.category-tab.data-v-2b8df97e {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+  font-size: 26rpx;
+  color: #8c5c2a;
+}
+.category-tab--active.data-v-2b8df97e {
+  font-weight: 700;
+  color: #5a2c12;
+  position: relative;
+}
+.category-tab--active.data-v-2b8df97e::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  border-radius: 999rpx;
+  background: #ffb74d;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.map-section.data-v-2b8df97e {
+  /* 地图模块外框配色与详情页 section-card 保持一致 */
+  background: #fffef7;
+  border-radius: 24rpx;
+  border: 2rpx solid #f0e0c0;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.06);
+  padding: 12rpx 12rpx 16rpx;
+  margin-bottom: 10rpx;
+}
+.location-header.data-v-2b8df97e {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rpx 8rpx;
+}
+.location-title.data-v-2b8df97e {
+  font-size: 24rpx;
+  color: #8c5c2a;
+}
+.location-actions.data-v-2b8df97e {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+.recenter-btn.data-v-2b8df97e {
+  display: flex;
+  align-items: center;
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  background: #ffe9b0;
+}
+.manual-location-btn.data-v-2b8df97e {
+  display: flex;
+  align-items: center;
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  background: #ffe9b0;
+}
+.recenter-icon.data-v-2b8df97e {
+  font-size: 26rpx;
+  margin-right: 4rpx;
+}
+.recenter-text.data-v-2b8df97e {
+  font-size: 22rpx;
+}
+.manual-location-text.data-v-2b8df97e {
+  font-size: 22rpx;
+}
+.map-canvas.data-v-2b8df97e {
+  width: 100%;
+  height: 460rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+/* 放大状态下的地图高度，接近半屏效果 */
+.map-canvas--expanded.data-v-2b8df97e {
+  height: 64vh;
+}
+.map-native.data-v-2b8df97e {
+  width: 100%;
+  height: 100%;
+}
+.map-webview-overlay.data-v-2b8df97e {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.map-webview.data-v-2b8df97e {
+  width: 100%;
+  height: 100%;
+}
+/* 地图放大/还原按钮样式 */
+.map-expand-toggle.data-v-2b8df97e {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  padding: 6rpx 14rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 254, 247, 0.96);
+  border: 2rpx solid #f0e0c0;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.08);
+  font-size: 22rpx;
+  color: #8c5c2a;
+}
+.map-expand-toggle--bottom-right.data-v-2b8df97e {
+  right: 16rpx;
+  bottom: 16rpx;
+}
+.map-expand-toggle--top-left.data-v-2b8df97e {
+  left: 16rpx;
+  top: 16rpx;
+}
+.map-expand-toggle-icon.data-v-2b8df97e {
+  font-size: 24rpx;
+}
+.map-expand-toggle-text.data-v-2b8df97e {
+  font-size: 22rpx;
+}
+.map-placeholder.data-v-2b8df97e {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  color: #8c5c2a;
+}
+/* 加载更多按钮样式 */
+.load-more-btn.data-v-2b8df97e {
+  margin: 16rpx auto 0;
+  padding: 10rpx 28rpx;
+  border-radius: 999rpx;
+  border: 2rpx solid #f0e0c0;
+  background: #fffef7;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.05);
+  font-size: 24rpx;
+  color: #8c5c2a;
+  text-align: center;
+  width: 60%;
+}
+.load-more-text.data-v-2b8df97e {
+  font-size: 24rpx;
+}
+/* 返回顶部按钮 */
+.back-to-top-btn.data-v-2b8df97e {
+  position: fixed;
+  right: 24rpx;
+  bottom: 180rpx;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  padding: 8rpx 18rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 254, 247, 0.96);
+  border: 2rpx solid #f0e0c0;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.15);
+  font-size: 22rpx;
+  color: #8c5c2a;
+}
+.back-to-top-icon.data-v-2b8df97e {
+  font-size: 26rpx;
+}
+.back-to-top-text.data-v-2b8df97e {
+  font-size: 22rpx;
+}
+.filter-row.data-v-2b8df97e {
+  margin-top: 12rpx;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 0 4rpx;
+}
+.filter-wrapper.data-v-2b8df97e {
+  position: relative;
+  z-index: 20;
+}
+.filter-dropdown.data-v-2b8df97e {
+  margin: 0 -20rpx 8rpx;
+  padding: 20rpx 20rpx 24rpx;
+  background: #ffffff;
+  border-radius: 0 0 24rpx 24rpx;
+  box-shadow: 0 12rpx 24rpx rgba(0, 0, 0, 0.08);
+  border-top: 2rpx solid #f0e0c0;
+}
+.filter-tag.data-v-2b8df97e {
+  flex-shrink: 0;
+  margin-right: 12rpx;
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  background: #fff5e6;
+  border: 2rpx solid #f0e0c0;
+  font-size: 24rpx;
+  color: #8c5c2a;
+}
+.filter-tag--active.data-v-2b8df97e {
+  background: #ffb74d;
+  border-color: #ff9800;
+  color: #5a2c12;
+}
+.filter-tag-inner.data-v-2b8df97e {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+}
+.filter-tag-text.data-v-2b8df97e {
+  white-space: nowrap;
+}
+.filter-tag-arrow.data-v-2b8df97e {
+  font-size: 20rpx;
+  color: #c47a2a;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.filter-tag-arrow--open.data-v-2b8df97e {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.filter-tag--active .filter-tag-arrow.data-v-2b8df97e {
+  color: #5a2c12;
+}
+.quick-filter-row.data-v-2b8df97e {
+  margin-bottom: 12rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 0 4rpx;
+}
+.quick-filter-tag.data-v-2b8df97e {
+  flex-shrink: 0;
+  margin-right: 12rpx;
+  padding: 6rpx 14rpx;
+  border-radius: 999rpx;
+  background: #fff9ec;
+  border: 2rpx solid #f0e0c0;
+  font-size: 22rpx;
+  color: #8c5c2a;
+}
+.quick-filter-tag--active.data-v-2b8df97e {
+  background: #ffe0b2;
+  border-color: #ff9800;
+  color: #5a2c12;
+}
+.filter-popup-mask.data-v-2b8df97e {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.filter-popup-panel.data-v-2b8df97e {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 320rpx;
+  background: #fffaf1;
+  border-radius: 0 0 24rpx 24rpx;
+  border-top: 2rpx solid #f0e0c0;
+  padding: 20rpx 20rpx 24rpx;
+}
+.filter-popup-content.data-v-2b8df97e {
+  max-height: 480rpx;
+  overflow-y: auto;
+}
+.popup-section.data-v-2b8df97e {
+  margin-bottom: 16rpx;
+}
+.popup-section-title.data-v-2b8df97e {
+  font-size: 24rpx;
+  color: #8c5c2a;
+  margin-bottom: 12rpx;
+}
+.popup-chips.data-v-2b8df97e {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+.popup-chip.data-v-2b8df97e {
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  background: #fff5e6;
+  border: 2rpx solid #f0e0c0;
+  font-size: 24rpx;
+  color: #8c5c2a;
+}
+.popup-chip--distance.data-v-2b8df97e {
+  font-weight: 600;
+}
+.popup-chip--active.data-v-2b8df97e {
+  background: #ffb74d;
+  border-color: #ff9800;
+  color: #5a2c12;
+}
+.landmark-layout.data-v-2b8df97e {
+  margin-top: 8rpx;
+  display: flex;
+  border-radius: 16rpx;
+  overflow: hidden;
+  border: 2rpx solid #f0e0c0;
+  background: #fffdf7;
+}
+.landmark-menu.data-v-2b8df97e {
+  width: 190rpx;
+  background: #fff5e0;
+  border-right: 2rpx solid #f0e0c0;
+}
+.landmark-menu-item.data-v-2b8df97e {
+  padding: 16rpx 12rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #8c5c2a;
+  border-bottom: 2rpx solid #f8e9d2;
+}
+.landmark-menu-item--active.data-v-2b8df97e {
+  background: #ffe0b2;
+  color: #5a2c12;
+  font-weight: 600;
+}
+.landmark-list.data-v-2b8df97e {
+  flex: 1;
+  padding: 12rpx 16rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+.landmark-item.data-v-2b8df97e {
+  padding: 10rpx 14rpx;
+  border-radius: 999rpx;
+  background: #fff5e6;
+  border: 2rpx solid #f0e0c0;
+  font-size: 24rpx;
+  color: #8c5c2a;
+}
+.landmark-item--active.data-v-2b8df97e {
+  color: #ff6f00;
+  border-color: #ff9800;
+  font-weight: 600;
+}
+.scenic-nearby-layout.data-v-2b8df97e {
+  margin-top: 8rpx;
+}
+.scenic-subtitle.data-v-2b8df97e {
+  font-size: 24rpx;
+  color: #c47a2a;
+  margin-bottom: 12rpx;
+}
+.scenic-distance-item.data-v-2b8df97e {
+  padding: 14rpx 0;
+  font-size: 26rpx;
+  color: #5a2c12;
+  border-bottom: 1rpx solid #f0e0c0;
+  font-weight: 600;
+}
+.scenic-distance-item--active.data-v-2b8df97e {
+  color: #ff6f00;
+}
+.scenic-category-list.data-v-2b8df97e {
+  margin-top: 8rpx;
+}
+.scenic-category-item.data-v-2b8df97e {
+  padding: 14rpx 0;
+  font-size: 26rpx;
+  color: #5a2c12;
+  border-bottom: 1rpx solid #f0e0c0;
+}
+.scenic-category-item--active.data-v-2b8df97e {
+  color: #ff6f00;
+}
+.sort-list.data-v-2b8df97e {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rpx;
+}
+.sort-item.data-v-2b8df97e {
+  width: 100%;
+  text-align: left;
+  padding: 12rpx 0;
+  font-size: 28rpx;
+  color: #8c5c2a;
+}
+.sort-item--active.data-v-2b8df97e {
+  color: #ff6f00;
+  font-weight: 600;
+}
+.sort-item-label.data-v-2b8df97e {
+  white-space: nowrap;
+}
+.sort-item-check.data-v-2b8df97e {
+  margin-left: 12rpx;
+  font-size: 24rpx;
+}
+.poi-list.data-v-2b8df97e {
+  margin-top: 8rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+.poi-card.data-v-2b8df97e {
+  /* 列表卡片配色与详情页 section-card 一致 */
+  background: #fffef7;
+  border-radius: 20rpx;
+  border: 2rpx solid #f0e0c0;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.04);
+  padding: 14rpx 18rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.poi-card--food.data-v-2b8df97e {
+  /* 美食卡片也使用同一模块底色，风格统一 */
+  background: #fffef7;
+}
+.poi-card--scenic.data-v-2b8df97e {
+  /* 景点卡片缩小padding，使卡片更紧凑 */
+  padding: 10rpx 14rpx;
+}
+.poi-card--scenic .poi-title-line.data-v-2b8df97e {
+  margin-bottom: 4rpx;
+}
+.poi-card--scenic .poi-rating-line.data-v-2b8df97e {
+  margin-top: 0;
+}
+.poi-card--scenic .poi-meta-line.data-v-2b8df97e {
+  margin-top: 0;
+}
+.poi-card--scenic .poi-food-tags.data-v-2b8df97e {
+  margin-top: 2rpx;
+}
+.poi-card--heritage.data-v-2b8df97e {
+  /* 非遗卡片与美食/景点保持一致，占满整行宽度 */
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+.poi-food.data-v-2b8df97e {
+  display: flex;
+  flex-direction: row;
+  gap: 12rpx;
+}
+.poi-card-thumb.data-v-2b8df97e {
+  /* 放大左侧图片尺寸，突出店铺封面 */
+  width: 210rpx;
+  height: 200rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f5f5f5;
+}
+.poi-card-right.data-v-2b8df97e {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  position: relative;
+}
+.heritage-card.data-v-2b8df97e {
+  display: flex;
+  flex-direction: row;
+  gap: 12rpx;
+}
+.heritage-rating-line.data-v-2b8df97e {
+  margin-top: 2rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #c47a2a;
+}
+.heritage-rating-left.data-v-2b8df97e {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+.heritage-meta-line.data-v-2b8df97e {
+  margin-top: 4rpx;
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 22rpx;
+  color: #8c5c2a;
+}
+.heritage-area.data-v-2b8df97e {
+  color: #8c5c2a;
+}
+/* 非遗卡片：位置下方的步行时间 + 右侧距离行 */
+.heritage-travel-line.data-v-2b8df97e {
+  margin-top: 2rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #8c5c2a;
+}
+.heritage-travel-text.data-v-2b8df97e {
+  color: #8c5c2a;
+}
+.heritage-intro.data-v-2b8df97e {
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  color: #8c5c2a;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.heritage-bottom-line.data-v-2b8df97e {
+  margin-top: 6rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.heritage-category-line.data-v-2b8df97e {
+  margin-top: 2rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rpx;
+  flex-wrap: nowrap;
+}
+.poi-title-line.data-v-2b8df97e {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6rpx;
+}
+.poi-name.data-v-2b8df97e {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #5a2c12;
+}
+.poi-name--food.data-v-2b8df97e {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.poi-distance.data-v-2b8df97e {
+  font-size: 22rpx;
+  color: #c47a2a;
+}
+.poi-address.data-v-2b8df97e {
+  font-size: 24rpx;
+  color: #8c5c2a;
+  line-height: 1.5;
+}
+.poi-meta-line.data-v-2b8df97e {
+  font-size: 22rpx;
+  color: #8c5c2a;
+  margin-top: 2rpx;
+}
+/* 景点卡片：地点下方的品类胶囊标签行 */
+.poi-category-line.data-v-2b8df97e {
+  margin-top: 4rpx;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+}
+.poi-rating-line.data-v-2b8df97e {
+  margin-top: 2rpx;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  font-size: 22rpx;
+  color: #c47a2a;
+}
+.poi-score.data-v-2b8df97e {
+  padding: 2rpx 8rpx;
+  border-radius: 8rpx;
+  background: #fff3e0;
+  color: #ff6f00;
+}
+.poi-category.data-v-2b8df97e {
+  color: #8c5c2a;
+}
+.poi-price.data-v-2b8df97e {
+  color: #8c5c2a;
+}
+.poi-food-tags.data-v-2b8df97e {
+  margin-top: 4rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rpx;
+}
+.poi-tags-left.data-v-2b8df97e {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+}
+.poi-tags-line.data-v-2b8df97e {
+  margin-top: 8rpx;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+}
+.poi-tag.data-v-2b8df97e,
+.poi-tag-pill.data-v-2b8df97e {
+  font-size: 22rpx;
+  color: #7b2f00;
+  background: #ffecc7;
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+}
+.poi-tag-pill--food.data-v-2b8df97e {
+  border: 2rpx solid #ffd08a;
+  background: rgba(255, 236, 199, 0.35);
+  color: #a45500;
+}
+.poi-distance-strong.data-v-2b8df97e {
+  flex-shrink: 0;
+  font-size: 22rpx;
+  color: #c47a2a;
+}
+/* 美食卡片距离显示在右下角 */
+.poi-distance-bottom-right.data-v-2b8df97e {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* 非遗列表卡片尺寸压缩，仅影响非遗列表 */
+.poi-card--heritage.data-v-2b8df97e {
+  padding: 8rpx 14rpx;
+}
+/* 非遗卡片左侧图片放大，向下拓展更多高度 */
+.poi-card--heritage .poi-card-thumb.data-v-2b8df97e {
+  height: 180rpx;
+}
+/* 景点卡片左侧图片缩小 */
+.poi-scenic .poi-card-thumb.data-v-2b8df97e {
+  width: 180rpx;
+  height: 160rpx;
+}
+/* 非遗卡片内部行间距适当压缩 */
+.poi-card--heritage .poi-title-line.data-v-2b8df97e {
+  margin-bottom: 2rpx;
+}
+.poi-card--heritage .heritage-meta-line.data-v-2b8df97e {
+  margin-top: 2rpx;
+}
+.poi-card--heritage .heritage-travel-line.data-v-2b8df97e {
+  margin-top: 0;
+}
+.poi-card--heritage .heritage-intro.data-v-2b8df97e {
+  margin-top: 2rpx;
+}
+.empty-hint.data-v-2b8df97e {
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #8c5c2a;
+}

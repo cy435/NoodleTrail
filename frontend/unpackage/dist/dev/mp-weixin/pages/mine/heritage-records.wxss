@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* uni.scss */
+/* 颜色变量 */
+/* 背景色 */
+/* 文字色 */
+/* 边框色 */
+/* 尺寸变量 */
+/* 圆角 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 项目自定义颜色 */
+.heritage-records-page.data-v-2bb28007 {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fffaf1 0%, #fff5dc 100%);
+  color: #5a2c12;
+  font-family: "LXGW WenKai Screen", "PingFang SC", system-ui;
+  padding-bottom: 40rpx;
+}
+.page-header.data-v-2bb28007 {
+  padding: 32rpx 28rpx 24rpx;
+  background: linear-gradient(135deg, #ffb74d 0%, #ff9800 100%);
+  border-bottom-left-radius: 24rpx;
+  border-bottom-right-radius: 24rpx;
+  box-shadow: 0 4rpx 12rpx rgba(255, 152, 0, 0.3);
+}
+.page-title.data-v-2bb28007 {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16rpx;
+}
+.stats-row.data-v-2bb28007 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40rpx;
+}
+.stat-item.data-v-2bb28007 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+.stat-value.data-v-2bb28007 {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #ffffff;
+}
+.stat-label.data-v-2bb28007 {
+  font-size: 24rpx;
+  color: #fff9e6;
+}
+.stat-divider.data-v-2bb28007 {
+  width: 2rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 0.3);
+}
+.tabs.data-v-2bb28007 {
+  display: flex;
+  padding: 20rpx 28rpx;
+  gap: 16rpx;
+  background: #fff5e6;
+  border-bottom: 2rpx solid #e8d4b8;
+}
+.tab-item.data-v-2bb28007 {
+  flex: 1;
+  padding: 16rpx;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12rpx;
+  border: 2rpx solid #e8d4b8;
+  transition: all 0.3s;
+}
+.tab-item.active.data-v-2bb28007 {
+  background: #ffcc33;
+  border-color: #ffcc33;
+}
+.tab-text.data-v-2bb28007 {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #5a2c12;
+}
+.tab-item.active .tab-text.data-v-2bb28007 {
+  color: #5a2c12;
+}
+.loading.data-v-2bb28007, .empty.data-v-2bb28007 {
+  padding: 120rpx 28rpx;
+  text-align: center;
+}
+.empty-text.data-v-2bb28007 {
+  display: block;
+  font-size: 28rpx;
+  color: #8c5c2a;
+  margin-bottom: 12rpx;
+}
+.empty-hint.data-v-2bb28007 {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+}
+.content-scroll.data-v-2bb28007 {
+  height: calc(100vh - 320rpx);
+  padding: 20rpx 30rpx 20rpx 10rpx;
+}
+.heritage-card.data-v-2bb28007 {
+  background: #fff5e6;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin: 0 20rpx 16rpx 0;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+  border: 3rpx solid #e8d4b8;
+  display: flex;
+  gap: 20rpx;
+  position: relative;
+}
+.heritage-image.data-v-2bb28007 {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 16rpx;
+  flex-shrink: 0;
+  background: #f0e6d8;
+}
+.heritage-info.data-v-2bb28007 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  min-width: 0;
+}
+.heritage-name.data-v-2bb28007 {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #5a2c12;
+  display: block;
+}
+.heritage-category.data-v-2bb28007 {
+  font-size: 22rpx;
+  color: #ff6b6b;
+  background: #ffe6a8;
+  padding: 4rpx 12rpx;
+  border-radius: 999px;
+  display: inline-block;
+  align-self: flex-start;
+}
+.heritage-desc.data-v-2bb28007 {
+  font-size: 24rpx;
+  color: #8c5c2a;
+  line-height: 1.5;
+  display: block;
+  margin-top: 8rpx;
+}
+.card-badge.data-v-2bb28007 {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 999px;
+  font-size: 22rpx;
+  font-weight: 600;
+}
+.experience-badge.data-v-2bb28007 {
+  background: #7A4E2D;
+  color: #ffffff;
+}
+.favorite-badge.data-v-2bb28007 {
+  background: #FFD666;
+  color: #5a2c12;
+}
+.badge-text.data-v-2bb28007 {
+  font-size: 22rpx;
+}
+.card-actions.data-v-2bb28007 {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.card-action-btn.data-v-2bb28007 {
+  padding: 6rpx 16rpx;
+  border-radius: 999px;
+  border: 2rpx solid #e08b7d;
+  background: #fff0e8;
+}
+.card-action-text.data-v-2bb28007 {
+  font-size: 24rpx;
+  color: #d9534f;
+}
